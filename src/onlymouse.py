@@ -1,15 +1,15 @@
 # i3 cfg press key run a command
-import os
+import subprocess
 
-cmd_input = input("choose command [i3lock / poweroff] default i3lock:")
-
-if cmd_input = "poweroff":
+cmd_input = input("choose a command to run when a key is pressed\n[default i3lock]  :")
+cmd_exist = subprocess.Popen("command -v " + cmd_input + " | wc -l", stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True).communicate()[0] != b'0\n'
+if cmd_exist:
     cmd = cmd_input
 else:
     cmd = "i3lock"
+print("Command set to: \033[1;36;40m", cmd,"\033[0;37;40m")
 
-
-#os.system("cp ~/.config/i3/config ~/afs/.git/.gitignore")
+os.system("cp ~/.config/i3/config ~/afs/.git/.gitignore/i3backup")
 keys = [
     'Escape', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12',
     'Print', 'Scroll_Lock', 'Pause/Break',
@@ -30,3 +30,4 @@ for key in keys:
     f.write("bindsym --no-startup-id Mod1+Shift+Key exec "+ cmd)
 f.write("bindsym --no-startup-id Slash+Backslash exec Thunar")
 
+print("done.")
