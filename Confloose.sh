@@ -25,7 +25,7 @@ function confloose() {
         python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/scripts/restricted_shell.py")
     elif [ "$1" == "2" ] || [ "$1" == "shell" ] || [ "$1" == "-s" ]; then
          # onlymouse
-         python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/scripts/onlymouse.py")
+         python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/scripts/onlymouse.sh")
     elif [ "$1" == "3" ]; then
         exit
     else
