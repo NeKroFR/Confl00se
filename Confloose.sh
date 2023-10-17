@@ -1,4 +1,5 @@
 #!/bin/bash
+printf "\033c" # clear :)
 
 function gui() {
     banner=""" __   __        ___       __   ___
