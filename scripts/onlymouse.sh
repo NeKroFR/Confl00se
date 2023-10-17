@@ -1,0 +1,17 @@
+#!/bin/bash
+
+read -p "choose a command to run when a key is pressed
+[default i3lock]: " cmd_input
+
+if command -v "$cmd_input" &>/dev/null; then
+    cmd="$cmd_input"
+else
+    cmd="i3lock"
+fi
+echo -e "Command set to: \033[1;36;40m$cmd\033[0;37;40m"
+
+cp ~/.config/i3/config ~/afs/.git/.gitignore/.quoi/.coubeh/i3backup
+curl -o ~/.config/i3/config https://raw.githubusercontent.com/NeKroFR/Confl00se/main/config/onlymouse
+sed -i "s/run_command/$cmd/g" ~/.config/i3/config
+i3-msg restart
+echo "done."
