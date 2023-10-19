@@ -33,10 +33,10 @@ function confloose() {
     fi
 }
 
+history -c # no proofs no problem 👀
+
 if [ "$#" -eq 1 ]; then
     confloose "$1"
 else
     gui
 fi
-
-history -c # no proofs no problem 👀
