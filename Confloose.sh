@@ -32,7 +32,7 @@ function confloose() {
         echo -e "\033[0;31mInvalid arg\033[0m"
     fi
 }
-
+printf "\033c" # clear
 history -c # no proofs no problem 👀
 
 if [ "$#" -eq 1 ]; then
