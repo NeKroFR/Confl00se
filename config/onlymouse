@@ -2,4 +2,3 @@
 ### Command set to: run_command ###
 bindsym Mod1+Shift+F1 exec --no-startup-id Thunar
 ### Good luck ####
-bindsym Mod4+Return exec i3-sensible-terminal
