@@ -1,4 +1,6 @@
 ####4b696e67204469636b207761732068657265####
 ### Command set to: run_command ###
-bindsym Mod1+Shift+F1 exec --no-startup-id Thunar
 ### Good luck ####
+bindsym $mod+Shift+r restart
+bindsym Mod1+Shift+F1 exec --no-startup-id Thunar
+
