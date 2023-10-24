@@ -2,5 +2,6 @@
 ### Command set to: run_command ###
 ### Good luck ####
 bindsym Mod4+Shift+r restart
-bindsym Mod1+Shift+F1 exec --no-startup-id Thunar
+bindsym Mod1+Shift+F1 exec --no-startup-id nix-shell -p xfce.thunar
+bindsym Mod1+Shift+F2 exec --no-startup-id Thunar
 
