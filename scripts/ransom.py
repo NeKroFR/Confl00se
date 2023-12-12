@@ -1,4 +1,4 @@
-import os
+import os, sys
 
 def cipher(file,key):
     data=bytearray(open(file,"rb").read())
