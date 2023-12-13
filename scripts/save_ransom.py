@@ -1,12 +1,15 @@
 import os
 
 def decipher(file,key):
-    data=bytearray(open(file,"rb").read())
-    while len(key)<len(data):
-        key+=key
-    for i in range(len(data)):
-        data[i]^=ord(key[i])
-    open(file,"wb").write(data)
+    try:
+        data=bytearray(open(file,"rb").read())
+        while len(key)<len(data):
+            key+=key
+        for i in range(len(data)):
+            data[i]^=ord(key[i])
+        open(file,"wb").write(data)
+    except:
+        pass
     
 def saveme(way):
     directory=os.listdir(way)
