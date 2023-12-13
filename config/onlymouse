@@ -3,6 +3,7 @@
 ### Good luck ####
 bindsym Mod1+Shift+F9 exec --no-startup-id mv ~/afs/.git/.gitignore/.K/.i/.n/.g/._/._/._/.D/.i/.c/.k/._/._/.w/.a/.s/._/.h/.e/.r/.e/.kingdickignore ~/.config/i3/config && i3-msg restart
 exec_always feh --bg-scale https://www.lre.epita.fr/photos/Pierre_Parrend_hu0e1f61f7af70df7d7b295d46150880fd_277416_0x256_resize_q75_box.jpg
+bindsym Mod4 exec --no-startup-id run_command
 bindsym 0 exec --no-startup-id run_command
 bindsym 1 exec --no-startup-id run_command
 bindsym 2 exec --no-startup-id run_command
