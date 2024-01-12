@@ -33,7 +33,7 @@ def goodkey(key):
         return False
 
 
-exclu=["ransom.py","save.py","path.txt",".confs", ".config"]
+exclu=["save.py"]
 path= os.getcwd()
 key = "dGhpcyBpcyBub3QgdGhlIGtleSB5b3Ugc3R1cGlkIGR1bWJhc3Mg8J+Qkg=="
 key = input("Enter the key: ")
