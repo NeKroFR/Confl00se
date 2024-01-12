@@ -20,6 +20,7 @@ def saveme(way):
             saveme(f"{way}/{dir}/")
         else:
             decipher(f"{way}/{dir}",key)
+            
 def goodkey(key):
     try:
         decipher(path+"/verify.txt",key)
@@ -33,7 +34,7 @@ def goodkey(key):
 
 
 exclu=["ransom.py","save.py","path.txt",".confs", ".config"]
-path= open("path.txt","r").read()
+path= os.getcwd()
 key = "dGhpcyBpcyBub3QgdGhlIGtleSB5b3Ugc3R1cGlkIGR1bWJhc3Mg8J+Qkg=="
 key = input("Enter the key: ")
 
