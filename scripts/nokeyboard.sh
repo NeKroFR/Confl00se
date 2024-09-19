@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# i3shetan -> xbindkeys
 read -p "choose a command to run when a key is pressed
 [default poweroff]: " cmd_input
 
