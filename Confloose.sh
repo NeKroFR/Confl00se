@@ -10,7 +10,8 @@ gui() {
     echo -e "\033[0;31m[1]\033[0m no keyboard"
     echo -e "\033[0;31m[2]\033[0m russian roulette"
     echo -e "\033[0;31m[3]\033[0m restricted shell"
-    echo -e "\033[0;31m[4]\033[0m exit"
+    echo -e "\033[0;31m[4]\033[0m easy vim"
+    echo -e "\033[0;31m[5]\033[0m exit"
     echo "-------"
     read -p $'\033[1;35mHow do you want to confloose? \033[0m' choice
     confloose "$choice"
@@ -29,7 +30,10 @@ confloose() {
     elif [ "$1" == "3" ] || [ "$1" == "shell" ] || [ "$1" == "-s" ]; then
         # restricted_shell
         bash <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/scripts/restricted_shell.sh")
-    elif [ "$1" == "4" ]; then
+    elif [ "$1" == "4" ] || [ "$1" == "vim" ] || [ "$1" == "-vy" ]; then
+        # easy vim
+        bash <(curl "https://raw.githubusercontent.com/NeKroFR/Confl00se/main/scripts/easyvim.sh")
+    elif [ "$1" == "5" ]; then
         exit
     else
         echo -e "\033[0;31mInvalid arg\033[0m"
